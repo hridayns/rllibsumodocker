@@ -97,7 +97,7 @@ RUN mkdir -p /home/alice/devel  && \
 
 # Download & install RLLIB+SUMO Utils
 WORKDIR /home/alice/libraries
-RUN git clone --depth 1 https://github.com/lcodeca/rllibsumoutils.git rllibsumoutils
+RUN git clone --depth 1 https://gitlab.scss.tcd.ie/sanghvih/rllibsumoutils.git rllibsumoutils
 WORKDIR /home/alice/libraries/rllibsumoutils
 USER root
 RUN python -m pip install -e .
